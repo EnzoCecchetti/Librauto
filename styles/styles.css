@@ -1,0 +1,373 @@
+@import url(../assets/fonts/Roboto-Regular.ttf);
+
+* {padding: 0;
+margin: 0;
+box-sizing: border-box;}
+
+/* Header y elementos del mismo */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+    background-color: #040534;}
+
+.logoprincipal-container {
+    flex: 1;
+    text-align: left;}
+
+.logoprincipal {
+    height: auto;
+    margin-left: 125px;
+    width: 175px}
+    
+nav {
+    flex: 2;
+    text-align: center;}
+
+.menu {
+    list-style: none;
+    padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;    
+}
+
+.menu li a {
+    text-decoration: none;
+    color:#ffffff;}
+
+.contacto-container {
+    flex: 1;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end;
+    margin-right: 50px;}
+    
+.logowhatsapp {
+    width: 40px; 
+    height: 40px;
+    margin-right: 10px;}
+
+.telefono {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;}
+
+/*Main index*/
+
+.main {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E0E0E6;
+}
+
+.imagen-principal {
+    width: 100%;
+    max-height: 50vh}
+
+.titulo {
+    text-align: center;
+    padding-top: 25px;}
+
+.main article {
+    border: 2px solid #626380; 
+    border-radius: 10px; 
+    padding: 20px; 
+    flex: 1; 
+    max-width: 300px; 
+    text-align: center;}
+
+.articulos-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 200px 50px 200px;
+}
+
+.main article img {
+    max-width: 100px; 
+    display: block; 
+    margin: 0 auto 10px;}
+
+
+.main article h2 {
+    font-size: 1.5rem; 
+    margin: 0 0 10px;}
+
+
+.main article p {
+    margin: 0;}
+
+.articulos-content ul {
+    list-style: none;
+}
+
+.links {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    margin-top: 25px;
+   
+}
+
+.links img {
+    max-width: 100%;
+    height: auto; 
+    margin: 10px
+}
+
+/* Main espacios */
+
+.main-espacios {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E0E0E6;
+    padding-bottom: 10px;
+}
+
+.main-espacios ul {
+    list-style: none;
+    text-align: center;
+    }
+
+.main-espacios h1 {
+    text-align: center;
+    font-size: 35px;}
+
+#carouselExampleIndicators {
+    max-width: 800px; 
+    margin: 0 auto; 
+    }
+    
+.carousel-item img {
+    width: 400px;
+    height: 500px; 
+    object-fit: cover; 
+    }
+      
+.container-button {
+    text-align: center;
+}
+
+.custom-button {
+    background-color: #434467;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px auto 0;
+    text-align: center;
+    width: max-content;
+    border: none;}
+
+.custom-button:hover {
+    background-color: #23244D;
+    color: #fff;
+}
+ 
+/* Servicios */
+
+.main-servicios {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E0E0E6;
+    padding-bottom: 20px;
+}
+
+.main-servicios h1, h3 {
+    text-align: center;
+}
+
+.services article {
+    border: 2px solid #626380; 
+    border-radius: 10px; 
+    padding: 20px; 
+    flex: 1; 
+    max-width: 300px; 
+    text-align: center;}
+
+.grid-container {
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+}
+.grid-container.services {
+    margin-left: 200px;
+}  
+
+.services article img {
+    max-width: 100px; 
+    display: block; 
+    margin: 0 auto 10px;}
+
+.services article ul {
+    list-style: none;
+}   
+
+/* FAQ */
+
+.main-faq {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E0E0E6;
+    padding: 60px;
+    }
+
+.faq {
+    text-align: left;
+    border-radius: 10px;
+}
+
+.faq h2 {
+    font-size: 24px;
+    }
+
+dl {
+    border-left: 2px;
+    padding-left: 20px;
+}
+
+dt {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Contacto */
+
+/* Estilos generales para el formulario */
+.main-contact {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E0E0E6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos para el formulario */
+.main-contact form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #434467;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #23244D;
+}
+
+/* Estilos para el mapa */
+iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #040534; 
+    padding: 20px; 
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: smaller; 
+    }
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contacto,.redes-sociales {
+    flex: 1; 
+    text-align: center;
+    margin-left: 20%;
+}
+
+.redes-sociales h2 {
+    text-align:center;
+}
+
+.redes-content {
+    display: flex;
+    align-items: center;
+    justify-content: center
+    }
+
+.redes-content h3 {
+    margin-right: 10px; 
+}
+
+.redes-content img {
+    height: 40px;
+    width: 40px
+}
+
+.newsletter {
+    border: 2px solid #626380; 
+    border-radius: 10px; 
+    padding: 10px; 
+    flex: 1; 
+    max-width: 250px; 
+    text-align: left;
+}
+
+.newsletter h2 {
+    margin-bottom: 10px;
+}
+
+.newsletter-form {
+    margin-bottom: 20px;
+}
+
+.boton-enviar-newslleter {
+    margin-top: 10px;
+}
+.instagramuser {
+    text-decoration: none;
+    color: #ffffff
+}
+
+
+
+
+
+    
+    
+
+    
+
