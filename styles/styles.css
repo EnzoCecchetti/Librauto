@@ -5,26 +5,32 @@ margin: 0;
 box-sizing: border-box;}
 
 /* Header y elementos del mismo */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar-custom {
     padding: 10px 20px; 
     background-color: #040534;}
 
-.logoprincipal-container {
-    flex: 1;
-    text-align: left;}
+.navbar, .offcanvas-title ul.navbar-nav li.nav-item a.nav-link{
+    font-family: 'Roboto', sans-serif
+}
+
+.offcanvas-body, .offcanvas-header {
+    background-color: #040534;
+}
+
+.offcanvas-body ul.navbar-nav {
+    text-align: center;
+}
+
+.navbar-toggler {
+    border: 1px sol #040534; 
+    border-radius: 2px;
+}
 
 .logoprincipal {
     height: auto;
-    margin-left: 125px;
+    margin-left: 25px;
     width: 175px}
     
-nav {
-    flex: 2;
-    text-align: center;}
-
 .menu {
     list-style: none;
     padding: 10px 20px;
@@ -34,18 +40,7 @@ nav {
     display: inline;
     margin-right: 20px;    
 }
-
-.menu li a {
-    text-decoration: none;
-    color:#ffffff;}
-
-.contacto-container {
-    flex: 1;
-    display: flex;
-    align-items: center; 
-    justify-content: flex-end;
-    margin-right: 50px;}
-    
+  
 .logowhatsapp {
     width: 40px; 
     height: 40px;
