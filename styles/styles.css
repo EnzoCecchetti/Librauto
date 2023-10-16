@@ -254,6 +254,23 @@ section .custom-card-services {
 
 .faq {
   text-align: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.custom-accordion .accordion-item {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.custom-accordion .accordion-header-custom {
+  padding-left: 0;
+}
+
+.custom-accordion .accordion-button:not(.collapsed) {
+  background-color: #8182A8;
+  color: #fff;
+  border: 5px solid #646582;
   border-radius: 10px;
 }
 
@@ -262,19 +279,6 @@ section .custom-card-services {
   padding-left: 15px;
 }
 
-dl {
-  border-left: 2px;
-  padding-left: 20px;
-  margin-bottom: 0;}
-
-dt {
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-dd {
-  margin-bottom: 0;
-}
 
 /* Contacto */
 .main-contact {
