@@ -208,53 +208,38 @@ body {
   text-align: center;
 }
 
-.services article {
+.services .card {
   border: 2px solid #626380;
   border-radius: 10px;
   padding: 20px;
-  flex: 1;
-  max-width: 300px;
-  text-align: center;
+  background-color: transparent;
 }
 
-.grid-container1 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+section .custom-card-services {
+  height: 225px;
 }
 
-section article ul {
-  padding-left: 0px;
+.services .card ul{
+  list-style: none;
+  padding-left: 0;
+  padding-top: 5px;
 }
 
-.grid-container1.services {
- 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    align-items: center;
-    margin: 0px 15px 0px 15px; 
-}
-
-
-.grid-container.services article {
-  width: 300px; 
-  height: 227px
-  }
-
-.services article img {
+.center-img {
   max-width: 100px;
   display: block;
   margin: 0 auto 10px;
 }
 
-.services article ul {
-  list-style: none;
+.flex-container1{
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+    align-items: center;
+    margin: 0px 15px 0px 15px; 
 }
+
 
 /* FAQ */
 
