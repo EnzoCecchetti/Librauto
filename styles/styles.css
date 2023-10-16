@@ -9,7 +9,7 @@
 /* Fuente común */
 body {
   font-family: 'Roboto', sans-serif;
-}
+  }
 
 /* Header y elementos del mismo */
 .navbar-custom, .offcanvas-title ul.navbar-nav li.nav-item a.nav-link,
@@ -57,15 +57,21 @@ body {
 }
 
 /* Main index */
+
 .main {
   background-color: #E0E0E6;
   text-align: center;
 }
 
+.banner-container {
+  margin-top: 100px;
+}
+
 .imagen-principal {
   width: 100%;
   max-height: 50vh;
-  object-fit: cover;
+  height: auto;
+  /*object-fit: cover;*/
 }
 
 .titulo {
@@ -190,7 +196,7 @@ body {
   text-align: center;
 }
 
-.grid-container {
+.grid-container1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
@@ -200,9 +206,24 @@ body {
   text-align: center;
 }
 
-.grid-container.services {
-  margin-left: 200px;
+section article ul {
+  padding-left: 0px;
 }
+
+.grid-container1.services {
+ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    margin: 0px 15px 0px 15px; 
+}
+
+
+.grid-container.services article {
+  width: 300px; 
+  height: 227px
+  }
 
 .services article img {
   max-width: 100px;
@@ -210,15 +231,21 @@ body {
   margin: 0 auto 10px;
 }
 
-services article ul {
+.services article ul {
   list-style: none;
 }
 
 /* FAQ */
+
+.grid-container-faq {
+  display: grid;
+  height: 100vh;
+  }
+
 .main-faq {
   background-color: #E0E0E6;
-  padding: 60px;
-}
+  padding: 150px 0px 100px 0px;
+   }
 
 .faq {
   text-align: left;
@@ -227,16 +254,21 @@ services article ul {
 
 .faq h2 {
   font-size: 24px;
+  padding-left: 15px;
 }
 
 dl {
   border-left: 2px;
   padding-left: 20px;
-}
+  margin-bottom: 0;}
 
 dt {
   font-weight: bold;
   margin-top: 20px;
+}
+
+dd {
+  margin-bottom: 0;
 }
 
 /* Contacto */
@@ -246,8 +278,8 @@ dt {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 10px;
+  padding: 130px 10px 20px 10px;
 }
 
 .main-contact form {
@@ -290,7 +322,7 @@ input[type="reset"]:hover {
 
 iframe {
   width: 100%;
-  height: 450px;
+  height: 100vh;
   border: none;
   border-radius: 10px;
 }
@@ -318,8 +350,7 @@ footer section {
 
 .contacto, .redes-sociales {
   text-align: center;
-  margin-left: 15px;
- }
+  }
 
 .redes-sociales h2 {
   text-align: center;
@@ -356,13 +387,3 @@ footer section {
 .newsletter-form input[type="email"] {
   margin-bottom: 10px;  
 }
-
-
-
-
-
-    
-    
-
-    
-
