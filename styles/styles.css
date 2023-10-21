@@ -396,3 +396,85 @@ footer section {
 .newsletter-form input[type="email"] {
   margin-bottom: 10px;  
 }
+
+/*Media query*/
+
+@media (max-width: 576px) and (min-width: 300px){
+  
+  .navbar-brand {
+    display: block;
+    text-align: center;
+    margin-top: 10px; 
+  }
+
+.navbar-toggler {
+    display: block;
+    text-align: center;
+    margin-top: 10px; }
+
+  .d-flex.align-items-center {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .header .container-fluid {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+  .logoprincipal-container {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      margin: -30px
+  }
+    
+    .logoprincipal {
+      height: auto;
+      width: 155px;
+      margin: 0px auto}
+    
+    .telefono {
+      font-size: 0.7rem;
+    }
+
+    .main-faq {
+      padding: 250px 0px 153px 0px;
+         }
+    .main-contact {
+      display: block;
+
+    }       
+    footer section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto; 
+      gap: 5px;
+      }
+    
+    .div-footer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    footer section article h4, h3 {
+    font-size:medium; 
+    }
+     
+    footer section article h2 {
+    font-size: 1.0rem
+    }
+      
+    .newsletter {
+      grid-row: span 2;
+      padding-right: 0%;
+      }
+    
+    .iframe {
+      width: 100%;
+      height: 100vh;
+      }
+    
+    }
