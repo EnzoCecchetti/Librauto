@@ -51,6 +51,23 @@ body {
   margin-right: 10px;
 }
 
+.container-fluid .logowhatsapp:hover {
+  animation: pulse 0.5s infinite;
+}
+
+
+@keyframes pulse {
+  0% {
+      transform: scale(1); 
+  }
+  50% {
+      transform: scale(3); 
+  }
+  100% {
+      transform: scale(1); 
+}
+}
+
 .telefono {
   text-decoration: none;
   color: #ffffff;
@@ -69,8 +86,9 @@ body {
 
 .imagen-principal {
   width: 100%;
-  max-height: 50vh;
+  max-height: 40vh;
   height: auto;
+  object-fit: cover;
   }
 
 .titulo {
@@ -145,7 +163,7 @@ body {
 
 .links img {
   width: 100%;
-  height: 100%;
+  height: 30vh;
   object-fit: cover;
 }
 
@@ -237,7 +255,8 @@ section .custom-card-services {
     flex-wrap: wrap;
     justify-content: space-evenly; 
     align-items: center;
-    margin: 0px 15px 0px 15px; 
+    margin: 0px 15px 0px 15px;
+    gap: 10px; 
 }
 
 /* FAQ */
@@ -363,6 +382,11 @@ footer section {
   align-items: center;
 }
 
+.datos-footer {
+  display: flex;
+  justify-content: center;
+}
+
 .contacto, .redes-sociales {
   text-align: center;
   }
@@ -395,7 +419,7 @@ footer section {
   border: 2px solid #626380;
   border-radius: 10px;
   padding: 10px;
-  max-width: 250px;
+  max-width: fit-content;
   text-align: left
 }
 
@@ -405,7 +429,7 @@ footer section {
 
 /*Media query*/
 
-@media (max-width: 576px) and (min-width: 300px){
+@media (max-width: 862px) and (min-width: 300px){
   
   .navbar-brand {
     display: block;
@@ -445,14 +469,35 @@ footer section {
     .telefono {
       font-size: 0.7rem;
     }
-
+    .card-body-custom .card-title-custom {
+      font-size: small;
+    }
+    
     .main-faq {
-      padding: 250px 0px 153px 0px;
-         }
+      padding-top: 35px;
+    }
+
+    .tittle-faq {
+      padding:0px 0px 20px 10px
+    }
+
     .main-contact {
       display: block;
+    }  
+    
+    .main .titulo div {
+      font-size: x-small;
+    }
+    
+    .articulos-content {
+      padding: 50px 10px 50px 10px;
+      gap: 5px;
+    }
 
-    }       
+    .links img {
+        height: auto;
+    }
+
     footer section {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -482,5 +527,16 @@ footer section {
       width: 100%;
       height: 100vh;
       }
-    
+        
     }
+
+    @media (max-width: 352px) and (min-width: 300px){
+      .container-fluid {
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+
+      .navbar-custom {
+        padding: 5px 5px;
+    }
+  }
