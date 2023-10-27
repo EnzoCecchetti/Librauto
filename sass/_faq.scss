@@ -1,0 +1,34 @@
+.grid-container-faq {
+    display: grid;
+    height: 100vh;
+    .main-faq {
+        background-color: $color-main;
+        padding: 50px 0px 50px 0px;
+        .tittle-faq {
+            text-align: center;
+            padding: 0px 0px 35px 50px;
+            color:$color-fondo;
+            .faq {
+                text-align: left;
+                padding-left: 15px;
+                padding-right: 15px;
+                h2 {
+                    font-size: 24px;
+                    padding-left: 15px;
+                  }
+                .custom-accordion{
+                    border-radius: 10px;
+                    margin-bottom: 10px;
+                    padding-left: 0;
+                    .accordion-item {
+                        border-radius: 10px;
+                        margin-bottom: 10px;
+                    }
+                  .accordion-header-custom {
+                    padding-left: 0;
+                    }
+                }
+            }
+         }
+        }
+    }

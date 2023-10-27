@@ -1,0 +1,30 @@
+.navbar-custom {
+    background-color: $color-fondo;
+    padding: 10px 20px;
+    .offcanvas-body{
+        background-color: $color-fondo;
+        ul.navbar-nav {
+            text-align: center;
+        }};
+    .offcanvas-header {
+        background-color: $color-fondo;
+    };
+    div .navbar-toggler {
+        border: 1px solid $color-fondo;
+        border-radius: 2px;
+    };
+    .logoprincipal {
+        height: auto;
+        width: 175px;
+    }
+    .logowhatsapp {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        &:hover {animation: pulse $duracion infinite}
+      }
+    .telefono {
+        text-decoration: none;
+        color: #ffffff; 
+    }
+}

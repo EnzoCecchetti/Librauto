@@ -1,0 +1,108 @@
+/* Estilos comunes para tamaños de pantalla entre 300px y 862px */
+/*Media query*/
+
+@media (max-width: 862px) and (min-width: 300px){
+  /*Header*/
+    .navbar-custom{
+        .navbar-brand {
+            display: block;
+            text-align: center;
+            margin-top: 10px; 
+          }
+        .navbar-toggler {
+            display: block;
+            text-align: center;
+            margin-top: 10px; }
+        .d-flex.align-items-center {
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            }
+        .container-fluid {
+            display: flex;
+            flex-wrap: nowrap;
+            justify-content: space-around;
+            }
+        .logoprincipal {
+            height: auto;
+            width: 155px;
+            margin: 0px auto}
+        .telefono {
+            font-size: 0.7rem;
+            }
+    }
+    
+    .articulos-content {
+        padding: 50px 10px 50px 10px;
+        gap: 5px;
+        .custom-card {
+            .card-body-custom .card-title-custom {
+                font-size: small;
+              }
+            .titulo div {
+                font-size: x-small;
+              }      
+        }
+      }
+        
+    .links img {
+          height: auto;
+      }
+      
+      .main-faq {
+        padding-top: 35px;
+      }
+  
+      .tittle-faq {
+        padding:0px 0px 20px 10px
+      }
+  
+      .main-contact {
+        display: block;
+      }  
+      
+      
+  
+      footer section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto; 
+        gap: 5px;
+        }
+      
+      .div-footer {
+        display: flex;
+        flex-direction: column;
+      }
+  
+      footer section article h4, h3 {
+      font-size:medium; 
+      }
+       
+      footer section article h2 {
+      font-size: 1.0rem
+      }
+        
+      .newsletter {
+        grid-row: span 2;
+        padding-right: 0%;
+        }
+      
+      .iframe {
+        width: 100%;
+        height: 100vh;
+        }
+          
+      }
+  
+      @media (max-width: 352px) and (min-width: 300px){
+        .navbar-custom {
+            .container-fluid {
+                padding-right: 0px;
+                padding-left: 0px;
+              }
+            .navbar-custom {
+                padding: 5px 5px;
+            }
+        }
+    }
