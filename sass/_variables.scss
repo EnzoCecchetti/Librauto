@@ -3,19 +3,6 @@ $color-fondo: #040534;
 $duracion: 0.5s;
 $color-main:#E0E0E6;
 $color-elemento: #626380;
-$imagen-principal: (
-    width: 100%,
-    max-height: 40vh,
-    height: auto,
-    object-fit: cover
-  );
-$boton: (
-    background-color: #434467,
-    color: #fff,
-    padding: 10px 20px,
-    text-decoration: none,
-    border-radius: 5px,
-    font-weight: bold,
-    cursor: pointer,
-    );
+$color-fondo-boton: #434467;
+$color-fuente: #fff;
 $color-boton-hover: #23244D;

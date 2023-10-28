@@ -40,7 +40,7 @@ body {
 }
 .navbar-custom .telefono {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 @keyframes pulse {
@@ -94,7 +94,7 @@ body {
 }
 .footer .div-footer .redes-sociales .redes-content .instagramuser {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
 }
 
 .newsletter {
@@ -338,7 +338,7 @@ body {
   padding: 130px 10px 20px 10px;
 }
 .main-contact form {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px;
   border-radius: 10px;
   display: flex;
@@ -419,6 +419,7 @@ body {
   .main .links img {
     height: auto;
   }
+  /* Media query para FAQ*/
   .main-faq {
     padding-top: 35px;
   }

@@ -2,7 +2,7 @@
 .footer {
     background-color: $color-fondo;
     padding: 10px 15px 2px 15px;
-    color: #fff;
+    color: $color-fuente;
     .div-footer {
         display: flex;
         justify-content: space-between;
@@ -36,7 +36,7 @@
                   }
                   .instagramuser {
                     text-decoration: none;
-                    color: #ffffff;
+                    color: $color-fuente;
                 }
               }
             }
@@ -56,8 +56,7 @@
             margin-bottom: 10px;  
           }
         .boton-enviar-newslleter  {
-            @each $propiedad, $valor in $boton 
-            {#{$propiedad}: $valor;};
+            @include boton;
             margin: 10px auto 0;
             border: $color-fondo;
             &:hover {

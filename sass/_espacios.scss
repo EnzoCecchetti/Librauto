@@ -3,8 +3,7 @@
     background-color: $color-main;
     padding-bottom: 10px;
     img {
-        @each $propiedad, $valor in $imagen-principal {
-            #{$propiedad}: $valor;}
+        @include banner
         }
     ul {
         list-style: none;
@@ -26,8 +25,7 @@
     .container-button {
         text-align: center;
         .custom-button {
-            @each $propiedad, $valor in $boton 
-            {#{$propiedad}: $valor;};
+            @include boton;
             margin: 10px auto 0;
             border: $color-fondo;
             &:hover {

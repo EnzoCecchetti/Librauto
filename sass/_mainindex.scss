@@ -4,8 +4,7 @@
     background-color: #E0E0E6;
     text-align: center;
     img {
-        @each $propiedad, $valor in $imagen-principal {
-            #{$propiedad}: $valor;}
+        @include banner
         }
     .titulo {
         padding-top: 25px; 
