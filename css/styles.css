@@ -60,39 +60,39 @@ body {
   padding: 10px 15px 2px 15px;
   color: #fff;
 }
-.footer section {
+.footer .div-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.footer section article h4, .footer section article h3 {
+.footer .div-footer article h4, .footer .div-footer article h3 {
   font-size: large;
 }
-.footer section article h2 {
+.footer .div-footer article h2 {
   font-size: 1.5rem;
 }
-.footer section .contacto {
+.footer .div-footer .contacto {
   text-align: center;
 }
-.footer section .redes-sociales {
+.footer .div-footer .redes-sociales {
   text-align: center;
 }
-.footer section .redes-sociales h2 {
+.footer .div-footer .redes-sociales h2 {
   text-align: center;
 }
-.footer section .redes-sociales .redes-content {
+.footer .div-footer .redes-sociales .redes-content {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.footer section .redes-sociales .redes-content h3 {
+.footer .div-footer .redes-sociales .redes-content h3 {
   margin-right: 10px;
 }
-.footer section .redes-sociales .redes-content img {
+.footer .div-footer .redes-sociales .redes-content img {
   height: 40px;
   width: 40px;
 }
-.footer section .redes-sociales .redes-content .instagramuser {
+.footer .div-footer .redes-sociales .redes-content .instagramuser {
   text-decoration: none;
   color: #ffffff;
 }
@@ -291,6 +291,7 @@ body {
   text-align: center;
 }
 
+/* Estilos del FAQ*/
 .grid-container-faq {
   display: grid;
   height: 100vh;
@@ -326,6 +327,7 @@ body {
   padding-left: 0;
 }
 
+/*Estilos de Contactos*/
 .main-contact {
   background-color: #E0E0E6;
   display: flex;
@@ -408,7 +410,7 @@ body {
     gap: 5px;
   }
   .main .articulos-content .custom-card .card-body-custom {
-    font-size: smaller;
+    font-size: x-small;
     padding: 10px 2px 0px 2px;
   }
   .main .articulos-content .custom-card .card-body-custom h5 {
@@ -431,25 +433,36 @@ body {
 }
 
 /* Media query footer */
-.footer section article h4 {
-  font-size: medium;
-}
-.footer section .redes-sociales h2 {
-  font-size: medium;
-}
-
-.div-footer {
+.footer .div-footer {
   display: flex;
   flex-direction: column;
 }
-
-footer section article h2 {
-  font-size: 1rem;
+.footer .div-footer article {
+  text-align: center;
+}
+.footer .div-footer article h2 {
+  margin-bottom: 0;
+}
+.footer .div-footer article h4 {
+  font-size: medium;
+}
+.footer .div-footer article input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.footer .div-footer article .newsletter-form .boton-enviar-newslleter {
+  margin: 0;
+}
+.footer .div-footer .redes-sociales h2 {
+  font-size: medium;
 }
 
-.newsletter {
-  grid-row: span 2;
-  padding-right: 0%;
+/*Media query FAQ*/
+.grid-container-faq .main-faq {
+  padding-top: 35px;
+}
+.grid-container-faq .main-faq .tittle-faq {
+  padding: 0px 0px 20px 10px;
 }
 
 .iframe {
