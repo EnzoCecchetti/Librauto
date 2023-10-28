@@ -176,7 +176,7 @@ body {
   text-align: center;
   flex: 1;
 }
-.main .custom-card .card-title ul {
+.main .custom-card ul {
   list-style: none;
   padding: 0;
   text-align: left;
@@ -402,53 +402,61 @@ body {
   .navbar-custom .telefono {
     font-size: 0.7rem;
   }
-  .articulos-content {
-    padding: 50px 10px 50px 10px;
+  /* Media query main index*/
+  .main .articulos-content {
+    padding: 10px;
     gap: 5px;
   }
-  .articulos-content .custom-card .card-body-custom .card-title-custom {
+  .main .articulos-content .custom-card .card-body-custom {
+    font-size: smaller;
+    padding: 10px 2px 0px 2px;
+  }
+  .main .articulos-content .custom-card .card-body-custom h5 {
     font-size: small;
   }
-  .articulos-content .custom-card .titulo div {
-    font-size: x-small;
-  }
-  .links img {
+  .main .links img {
     height: auto;
   }
-  .main-faq {
-    padding-top: 35px;
-  }
-  .tittle-faq {
-    padding: 0px 0px 20px 10px;
-  }
-  .main-contact {
-    display: block;
-  }
-  footer section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 5px;
-  }
-  .div-footer {
-    display: flex;
-    flex-direction: column;
-  }
-  footer section article h4, h3 {
-    font-size: medium;
-  }
-  footer section article h2 {
-    font-size: 1rem;
-  }
-  .newsletter {
-    grid-row: span 2;
-    padding-right: 0%;
-  }
-  .iframe {
-    width: 100%;
-    height: 100vh;
-  }
 }
+.main-faq {
+  padding-top: 35px;
+}
+
+.tittle-faq {
+  padding: 0px 0px 20px 10px;
+}
+
+.main-contact {
+  display: block;
+}
+
+/* Media query footer */
+.footer section article h4 {
+  font-size: medium;
+}
+.footer section .redes-sociales h2 {
+  font-size: medium;
+}
+
+.div-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer section article h2 {
+  font-size: 1rem;
+}
+
+.newsletter {
+  grid-row: span 2;
+  padding-right: 0%;
+}
+
+.iframe {
+  width: 100%;
+  height: 100vh;
+}
+
 @media (max-width: 352px) and (min-width: 300px) {
   .navbar-custom .container-fluid {
     padding-right: 0px;

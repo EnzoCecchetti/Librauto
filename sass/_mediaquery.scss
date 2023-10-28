@@ -31,25 +31,31 @@
             font-size: 0.7rem;
             }
     }
-    
-    .articulos-content {
-        padding: 50px 10px 50px 10px;
+    /* Media query main index*/ 
+
+    .main {
+      .articulos-content {
+        padding: 10px;
         gap: 5px;
-        .custom-card {
-            .card-body-custom .card-title-custom {
-                font-size: small;
-              }
-            .titulo div {
-                font-size: x-small;
-              }      
+        .custom-card{
+          .card-body-custom {
+            font-size: smaller;
+            padding: 10px 2px 0px 2px;
+            h5 {
+              font-size: small;
+            }
+            }
+          }
+      }
+      .links img {
+            height: auto;
         }
-      }
-        
-    .links img {
-          height: auto;
-      }
+    }
       
-      .main-faq {
+      
+    }
+     
+    .main-faq {
         padding-top: 35px;
       }
   
@@ -62,22 +68,28 @@
       }  
       
       
+  /* Media query footer */
+
+      .footer {
+          section {
+            article {
+              h4 {
+                font-size:medium;
+              }
+            }
+            .redes-sociales{
+              h2 {font-size: medium;
+                }
+              }
+            }
+      }      
+          .div-footer {
+          display: flex;
+          flex-direction: column;
+          }
+        
   
-      footer section {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto; 
-        gap: 5px;
-        }
       
-      .div-footer {
-        display: flex;
-        flex-direction: column;
-      }
-  
-      footer section article h4, h3 {
-      font-size:medium; 
-      }
        
       footer section article h2 {
       font-size: 1.0rem
@@ -93,7 +105,7 @@
         height: 100vh;
         }
           
-      }
+
   
       @media (max-width: 352px) and (min-width: 300px){
         .navbar-custom {
