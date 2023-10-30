@@ -11,7 +11,9 @@
     }
     h1 {
         text-align: center;
-        font-size: 35px;    
+        font-size: 35px;
+        text-shadow: $sombre-texto; 
+        color: $color-fondo;   
     }
     #carouselExampleIndicators {
         max-width: 800px;

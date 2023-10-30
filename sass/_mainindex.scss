@@ -7,7 +7,11 @@
         @include banner
         }
     .titulo {
-        padding-top: 25px; 
+        padding-top: 25px;
+        h1 {
+            text-shadow: $sombre-texto;
+            color: $color-fondo;
+        }
     }
     .articulos-content {
         display: flex;

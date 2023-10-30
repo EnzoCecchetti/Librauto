@@ -139,6 +139,10 @@ body {
 .main .titulo {
   padding-top: 25px;
 }
+.main .titulo h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5019607843);
+  color: #040534;
+}
 .main .articulos-content {
   display: flex;
   justify-content: space-between;
@@ -215,6 +219,8 @@ body {
 .main-espacios h1 {
   text-align: center;
   font-size: 35px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5019607843);
+  color: #040534;
 }
 .main-espacios #carouselExampleIndicators {
   max-width: 800px;
@@ -254,7 +260,12 @@ body {
   height: auto;
   object-fit: cover;
 }
-.main-servicios h1, .main-servicios h3 {
+.main-servicios h1 {
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5019607843);
+  color: #040534;
+}
+.main-servicios h3 {
   text-align: center;
 }
 .main-servicios .services {
@@ -299,6 +310,7 @@ body {
 .grid-container-faq .main-faq {
   background-color: #E0E0E6;
   padding: 60px 0px 100px 0px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5019607843);
 }
 .grid-container-faq .main-faq .tittle-faq {
   text-align: center;
@@ -328,6 +340,15 @@ body {
 }
 
 /*Estilos de Contactos*/
+.contact-tittle {
+  background-color: #E0E0E6;
+  padding-top: 15px;
+  text-align: center;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5019607843);
+  color: #040534;
+}
+
 .main-contact {
   background-color: #E0E0E6;
   display: flex;
@@ -335,7 +356,7 @@ body {
   align-items: center;
   justify-content: space-around;
   gap: 10px;
-  padding: 130px 10px 20px 10px;
+  padding: 50px 10px 20px 10px;
 }
 .main-contact form {
   background-color: #fff;
