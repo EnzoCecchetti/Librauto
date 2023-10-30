@@ -21,7 +21,8 @@
         width: 40px;
         height: 40px;
         margin-right: 10px;
-        &:hover {animation: pulse $duracion infinite}
+        &:hover 
+        {animation: pulse 1s infinite}
       }
     .telefono {
         text-decoration: none;

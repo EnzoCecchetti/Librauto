@@ -9,6 +9,17 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .navbar-custom {
   background-color: #040534;
   padding: 10px 20px;
@@ -36,24 +47,13 @@ body {
   margin-right: 10px;
 }
 .navbar-custom .logowhatsapp:hover {
-  animation: pulse 0.5s infinite;
+  animation: pulse 1s infinite;
 }
 .navbar-custom .telefono {
   text-decoration: none;
   color: #fff;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(3);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 /* Diseño footer */
 .footer {
   background-color: #040534;
