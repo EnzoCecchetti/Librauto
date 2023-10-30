@@ -1,0 +1,16 @@
+@mixin boton {
+    background-color: $color-fondo-boton;
+    color: $color-fuente;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@mixin banner {
+    width: 100%;
+    max-height: 40vh;
+    height: auto;
+    object-fit: cover;
+}

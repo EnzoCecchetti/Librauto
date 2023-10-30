@@ -1,0 +1,36 @@
+/* Estilos del main de espacios.html*/
+.main-espacios {
+    background-color: $color-main;
+    padding-bottom: 10px;
+    img {
+        @include banner
+        }
+    ul {
+        list-style: none;
+        text-align: center;
+    }
+    h1 {
+        text-align: center;
+        font-size: 35px;    
+    }
+    #carouselExampleIndicators {
+        max-width: 800px;
+        margin: 0 auto; 
+    }
+    .carousel-item img {
+        width: 400px;
+        height: 500px;
+        object-fit: cover;
+    }
+    .container-button {
+        text-align: center;
+        .custom-button {
+            @include boton;
+            margin: 10px auto 0;
+            border: $color-fondo;
+            &:hover {
+                background-color: $color-boton-hover;
+            }
+        }
+    }
+}
