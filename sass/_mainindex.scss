@@ -3,6 +3,7 @@
 .main {
     background-color: #E0E0E6;
     text-align: center;
+    min-height: calc(100vh - 113.65px - 167.17px);
     img {
         @include banner
         }
@@ -16,7 +17,7 @@
     .articulos-content {
         display: flex;
         justify-content: space-between;
-        padding: 50px 200px 50px 200px;
+        margin: 50px 300px 50px 300px;
       }
     .article {
         border: 2px solid $color-elemento;
@@ -27,9 +28,7 @@
         text-align: center;
     }
     .custom-card {
-        border: 2px solid $color-elemento;
-        border-radius: 10px;
-        background-color: transparent;
+        @include card;
         padding: 20px;
         flex: 1;
         max-width: 300px;
@@ -40,7 +39,7 @@
         align-items: center;
         img {
             max-width: 100px;
-            display: block;
+            display: flex;
             margin: 0 auto 10px;
           }
         .card-title {

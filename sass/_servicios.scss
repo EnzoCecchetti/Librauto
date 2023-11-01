@@ -1,6 +1,7 @@
  /* Estilos de Servicios.html*/
 
  .main-servicios{
+  min-height: calc(100vh - 113.65px - 167.17px);
     img {
         @include banner
         }
@@ -10,9 +11,11 @@
       text-align: center;
       text-shadow: $sombre-texto;
       color: $color-fondo;
+      margin-top: 15px;
     }
     h3 {
         text-align: center;
+        margin: 20px
       }
     .services{
         display: flex;
@@ -22,10 +25,9 @@
         margin: 0px 15px 0px 15px;
         gap: 10px; 
         .card {
-        border: 2px solid $color-elemento;
-        border-radius: 10px;
+        @include card;
         padding: 20px;
-        background-color: transparent;}
+        }
         ul{
             list-style: none;
             padding-left: 0;

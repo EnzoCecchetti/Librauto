@@ -35,35 +35,68 @@
 
     .main {
       .articulos-content {
-        padding: 10px;
-        gap: 5px;
+        display: flex;
+        flex-grow: 1;
+        padding: 5px;
+        margin:0px 5px 0px 5px;
+        gap: 15px;
+        align-items: center;
         .custom-card{
+          padding: 5px;
+          height: 66vh;
           .card-body-custom {
             font-size: x-small;
-            padding: 10px 2px 0px 2px;
+            padding: 0px 2px 0px 2px;
             h5 {
               font-size: small;
+              margin: 0px;
             }
+            p {
+              margin: 0px;
             }
           }
+        }
       }
       .links img {
             height: auto;
         }
     }
+
+    /* Media query para Espacios */
+    .main-espacios {
+      #carouselExampleIndicators {
+        margin: 0 5px;
+      }
+      .titulo {
+        flex-direction: column;
+        padding: 0px 20px 15px 20px;
+        article {
+          margin-bottom: 0px;
+          h2 {
+            font-size: medium;
+          }
+          p{
+            font-size: small;
+          }
+        }
+      }
+    }
+
     /* Media query para FAQ*/           
-    .main-faq {
+    .grid-container-faq {
+      .main-faq {
         padding-top: 35px;
+        .tittle-faq {
+          padding:0px 0px 20px 10px
+        }
+        .faq {
+          padding-left: 5px;
+          padding-right: 5px;
+        } 
       }
+    }
+      
   
-      .tittle-faq {
-        padding:0px 0px 20px 10px
-      }
-  
-      .main-contact {
-        display: block;
-      }  
-       
   /* Media query footer */
 
       .footer {
@@ -73,8 +106,9 @@
             article {
               text-align: center;
               h2 {
-                margin-bottom: 0
-              };
+                margin-bottom: 0;
+                margin-top: 10px;      
+              }
               h4 {
                 font-size:medium;
               }
@@ -89,44 +123,87 @@
               }
             }
             .redes-sociales{
-              h2 {font-size: medium;
-                }
+              margin-bottom: 10px;
+              h2{
+                font-size: medium;
               }
+            }
           }
       }      
          
-    /*Media query FAQ*/
+   /*Media query para contactanos*/ 
 
-    .grid-container-faq {
-        .main-faq {
-          padding-top: 35px;
-          .tittle-faq {
-          padding:0px 35px 20px 10px
-          }
-          .faq {
-            padding-left: 5px;
-            padding-right: 5px;
-          } 
+      .main-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        form {
+          margin-left: 2px;
+          margin-right: 52px;
+          margin-bottom: 1px;
+          width: auto;
         }
-    }
-
-    
-      .iframe {
+        .iframe {
         width: 100%;
         height: 100vh;
+        margin-left: 5px;
+        margin-right: 5px;
         }
-          
-
+      }        
+    }
   
-      @media (max-width: 352px) and (min-width: 300px){
-        .navbar-custom {
-            .container-fluid {
-                padding-right: 0px;
-                padding-left: 0px;
-              }
-            .navbar-custom {
-                padding: 5px 5px;
-            }
+  @media (max-width: 352px) and (min-width: 300px){
+    .navbar-custom {
+      .container-fluid {
+        padding-right: 0px;
+        padding-left: 0px;
+      }
+      .navbar-custom {
+        padding: 5px 5px;
         }
+      }
+    }
+    @media (max-width: 500px) and (min-width: 300px) {
+      .main {
+        .articulos-content {
+          flex-direction: column;
+        }
+      }
+    }
+    @media (max-width: 1100px) and (min-width: 863px) {
+      .main {
+        .articulos-content {
+          display: flex;
+          flex-grow: 1;
+          padding: 5px;
+          margin:0px 5px 0px 5px;
+          gap: 15px;
+          align-items: center;
+          .custom-card{
+            padding: 5px;
+            height: 70vh;
+            .card-body-custom {
+              font-size: small;
+              padding: 0px 2px 0px 2px;
+              h5 {
+                font-size: medium;
+                margin: 0px;
+              }
+              p {
+                margin: 0px;
+              }
+            }
+          }
+        }
+        .links img {
+              height: auto;
+          }
+      }
+    
+
+    .footer{
+      .div-footer {
+        gap: 10px;
+      }
     }
   }
