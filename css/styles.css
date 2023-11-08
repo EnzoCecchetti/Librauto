@@ -213,8 +213,8 @@ body::-webkit-scrollbar-thumb {
 }
 .main .custom-card {
   background-color: rgba(98, 99, 128, 0.08);
-  border-bottom: 5px solid #626380;
-  border-right: 5px solid #626380;
+  border-bottom: 4px solid #626380;
+  border-right: 4px solid #626380;
   border-top: 1px solid rgba(98, 99, 128, 0.08);
   border-left: 1px solid rgba(98, 99, 128, 0.08);
   border-radius: 10px;
@@ -288,8 +288,8 @@ body::-webkit-scrollbar-thumb {
 }
 .main-espacios .titulo article {
   background-color: rgba(98, 99, 128, 0.08);
-  border-bottom: 5px solid #626380;
-  border-right: 5px solid #626380;
+  border-bottom: 4px solid #626380;
+  border-right: 4px solid #626380;
   border-top: 1px solid rgba(98, 99, 128, 0.08);
   border-left: 1px solid rgba(98, 99, 128, 0.08);
   border-radius: 10px;
@@ -298,8 +298,8 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 20px;
 }
 .main-espacios .titulo article:hover {
-  border-top: 5px solid #626380;
-  border-left: 5px solid #626380;
+  border-top: 4px solid #626380;
+  border-left: 4px solid #626380;
   border-bottom: 1px solid rgba(98, 99, 128, 0.08);
   border-right: 1px solid rgba(98, 99, 128, 0.08);
   border-radius: 10px;
@@ -401,8 +401,8 @@ body::-webkit-scrollbar-thumb {
 }
 .main-servicios .services .card {
   background-color: rgba(98, 99, 128, 0.08);
-  border-bottom: 5px solid #626380;
-  border-right: 5px solid #626380;
+  border-bottom: 4px solid #626380;
+  border-right: 4px solid #626380;
   border-top: 1px solid rgba(98, 99, 128, 0.08);
   border-left: 1px solid rgba(98, 99, 128, 0.08);
   border-radius: 10px;
@@ -560,27 +560,14 @@ body::-webkit-scrollbar-thumb {
   }
   /* Media query main index*/
   .main .articulos-content {
-    display: flex;
-    flex-grow: 1;
     padding: 5px;
     margin: 0px 5px 0px 5px;
-    gap: 15px;
+    gap: 25px;
     align-items: center;
   }
   .main .articulos-content .custom-card {
     padding: 5px;
     height: 66vh;
-  }
-  .main .articulos-content .custom-card .card-body-custom {
-    font-size: x-small;
-    padding: 0px 2px 0px 2px;
-  }
-  .main .articulos-content .custom-card .card-body-custom h5 {
-    font-size: small;
-    margin: 0px;
-  }
-  .main .articulos-content .custom-card .card-body-custom p {
-    margin: 0px;
   }
   .main .links img {
     height: auto;
@@ -669,9 +656,19 @@ body::-webkit-scrollbar-thumb {
     padding: 5px 5px;
   }
 }
-@media (max-width: 500px) and (min-width: 300px) {
+@media (max-width: 862px) and (min-width: 300px) {
   .main .articulos-content {
     flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .main .articulos-content .custom-card .card-body-custom h5 {
+    font-size: medium;
+  }
+  .main .articulos-content .custom-card .card-body-custom p {
+    font-size: small;
+  }
+  .main .articulos-content .custom-card .card-body-custom ul li {
+    font-size: small;
   }
 }
 @media (max-width: 1100px) and (min-width: 863px) {

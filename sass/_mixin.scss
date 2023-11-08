@@ -17,8 +17,8 @@
 
 @mixin card {
     background-color: rgba($color-elemento, 0.08);
-    border-bottom: 5px solid $color-elemento; 
-    border-right: 5px solid $color-elemento;
+    border-bottom: 4px solid $color-elemento; 
+    border-right: 4px solid $color-elemento;
     border-top: 1px solid rgba($color-elemento, 0.08); 
     border-left: 1px solid rgba($color-elemento, 0.08);
     border-radius: 10px;
@@ -26,8 +26,8 @@
 }
 
 @mixin card-hover {
-    border-top: 5px solid $color-elemento; 
-    border-left: 5px solid $color-elemento;
+    border-top: 4px solid $color-elemento; 
+    border-left: 4px solid $color-elemento;
     border-bottom: 1px solid rgba($color-elemento, 0.08); 
     border-right: 1px solid rgba($color-elemento, 0.08);
     border-radius: 10px;
