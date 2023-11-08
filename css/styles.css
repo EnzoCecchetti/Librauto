@@ -54,6 +54,7 @@ body::-webkit-scrollbar-thumb {
 .navbar-custom .logoprincipal {
   height: auto;
   width: 175px;
+  margin-right: 75px;
 }
 .navbar-custom .logowhatsapp {
   width: 40px;
@@ -438,9 +439,12 @@ body::-webkit-scrollbar-thumb {
   background-color: #E0E0E6;
   padding: 60px 0px 100px 0px;
 }
+.grid-container-faq .main-faq .faq-container {
+  padding: 0px 550px 0px 550px;
+}
 .grid-container-faq .main-faq .tittle-faq {
   text-align: center;
-  padding: 0px 0px 35px 50px;
+  padding: 0px 0px 35px 15px;
   color: #040534;
 }
 .grid-container-faq .main-faq .tittle-faq .faq {
@@ -489,7 +493,7 @@ body::-webkit-scrollbar-thumb {
   padding: 20px;
   border-radius: 10px;
   display: flex;
-  width: 60vh;
+  width: 70vh;
   flex-direction: column;
   gap: 10px;
 }
@@ -589,12 +593,20 @@ body::-webkit-scrollbar-thumb {
   .main-espacios .titulo article p {
     font-size: small;
   }
+  /* Media query para Services*/
+  .main-servicios .services {
+    gap: 25px;
+  }
   /* Media query para FAQ*/
   .grid-container-faq .main-faq {
     padding-top: 35px;
+    padding-bottom: 0px;
+  }
+  .grid-container-faq .main-faq .faq-container {
+    padding: 0px 75px 40px 75px;
   }
   .grid-container-faq .main-faq .tittle-faq {
-    padding: 0px 0px 20px 10px;
+    padding: 0px 5px 20px 5px;
   }
   .grid-container-faq .main-faq .faq {
     padding-left: 5px;
@@ -633,18 +645,17 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 50px;
   }
   .main-contact form {
-    margin-left: 2px;
-    margin-right: 52px;
-    margin-bottom: 1px;
-    width: auto;
+    width: 60%;
   }
   .main-contact .iframe {
-    width: 100%;
-    height: 100vh;
+    width: 80%;
+    height: 40vh;
     margin-left: 5px;
     margin-right: 5px;
+    margin-bottom: 25px;
   }
 }
 @media (max-width: 352px) and (min-width: 300px) {
@@ -697,6 +708,13 @@ body::-webkit-scrollbar-thumb {
   }
   .main .links img {
     height: auto;
+  }
+  .grid-container-faq .main-faq {
+    padding-top: 35px;
+    padding-bottom: 0px;
+  }
+  .grid-container-faq .main-faq .faq-container {
+    padding: 0px 75px 40px 75px;
   }
   .footer .div-footer {
     gap: 10px;
