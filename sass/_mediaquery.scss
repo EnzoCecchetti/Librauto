@@ -1,5 +1,5 @@
 /* Estilos comunes para tamaños de pantalla entre 300px y 862px */
-/*Media query*/
+
 
 @media (max-width: 862px) and (min-width: 300px){
   /*Header*/
@@ -150,7 +150,8 @@
         }
       }        
     }
-  
+  /*Estilos comunes para tamaños de pantalla entre 300px y 352px */
+
   @media (max-width: 352px) and (min-width: 300px){
     .navbar-custom {
       .container-fluid {
@@ -162,6 +163,8 @@
         }
       }
     }
+  /*Estilos comunes para tamaños de pantalla entre 862px y 300px */
+
     @media (max-width: 862px) and (min-width: 300px) {
       .main {
         .articulos-content {
@@ -185,8 +188,10 @@
         }
       }
     }
-    
+    /*Estilos comunes para tamaños de pantalla entre 863 y 1100px */
+
     @media (max-width: 1100px) and (min-width: 863px) {
+  /*Index*/
       .main {
         .articulos-content {
           display: flex;
@@ -215,6 +220,7 @@
               height: auto;
           }
       }
+      /*FAQ*/
 
       .grid-container-faq {
         .main-faq {
@@ -225,7 +231,8 @@
           }
         }
       }    
-
+      /* Footer*/
+      
     .footer{
       .div-footer {
         gap: 10px;
