@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/*Estilos generales del body*/
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -34,6 +35,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(1);
   }
 }
+/* Estilos del header*/
 .navbar-custom {
   background-color: #040534;
   padding: 10px 20px;
@@ -531,7 +533,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Estilos comunes para tamaños de pantalla entre 300px y 862px */
-/*Media query*/
 @media (max-width: 862px) and (min-width: 300px) {
   /*Header*/
   .navbar-custom .navbar-brand {
@@ -658,6 +659,7 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 25px;
   }
 }
+/*Estilos comunes para tamaños de pantalla entre 300px y 352px */
 @media (max-width: 352px) and (min-width: 300px) {
   .navbar-custom .container-fluid {
     padding-right: 0px;
@@ -667,6 +669,7 @@ body::-webkit-scrollbar-thumb {
     padding: 5px 5px;
   }
 }
+/*Estilos comunes para tamaños de pantalla entre 862px y 300px */
 @media (max-width: 862px) and (min-width: 300px) {
   .main .articulos-content {
     flex-direction: column;
@@ -682,7 +685,9 @@ body::-webkit-scrollbar-thumb {
     font-size: small;
   }
 }
+/*Estilos comunes para tamaños de pantalla entre 863 y 1100px */
 @media (max-width: 1100px) and (min-width: 863px) {
+  /*Index*/
   .main .articulos-content {
     display: flex;
     flex-grow: 1;
@@ -709,6 +714,7 @@ body::-webkit-scrollbar-thumb {
   .main .links img {
     height: auto;
   }
+  /*FAQ*/
   .grid-container-faq .main-faq {
     padding-top: 35px;
     padding-bottom: 0px;
@@ -716,9 +722,51 @@ body::-webkit-scrollbar-thumb {
   .grid-container-faq .main-faq .faq-container {
     padding: 0px 75px 40px 75px;
   }
+  /* Footer*/
   .footer .div-footer {
     gap: 10px;
   }
+}
+body {
+  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+}
+
+.error404 {
+  background-color: #E0E0E6;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.error404 .container-404 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.error404 .container-404 h1 {
+  text-align: center;
+  padding-top: 50px;
+  color: #040534;
+}
+.error404 .container-404 p {
+  text-align: center;
+  font-size: x-large;
+  margin-top: 15px;
+}
+.error404 .container-404 a .btn-custom {
+  background-color: #434467;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.error404 .container-404 img {
+  width: 75vh;
 }
 
 /*# sourceMappingURL=styles.css.map */
